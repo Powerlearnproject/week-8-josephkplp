@@ -1,0 +1,81 @@
+SQL Statements to Create the Database Schema:
+
+
+CREATE TABLE Mothers (
+    ID INT PRIMARY KEY,
+    Name VARCHAR(100),
+    Age INT,
+    Location VARCHAR(100),
+    HealthStatus VARCHAR(50)
+);
+
+CREATE TABLE HealthcareProviders (
+    ID INT PRIMARY KEY,
+    Name VARCHAR(100),
+    Location VARCHAR(100),
+    ServicesOffered VARCHAR(255)
+);
+
+
+CREATE TABLE HealthFacilities (
+    ID INT PRIMARY KEY,
+    Name VARCHAR(100),
+    Type VARCHAR(50),
+    Location VARCHAR(100)
+);
+
+
+CREATE TABLE BirthRecords (
+    ID INT PRIMARY KEY,
+    MotherID INT,
+    HealthcareProviderID INT,
+    DateOfBirth DATE,
+    Outcome VARCHAR(50),
+    FOREIGN KEY (MotherID) REFERENCES Mothers(ID),
+    FOREIGN KEY (HealthcareProviderID) REFERENCES HealthcareProviders(ID)
+);
+
+
+Populate the Database with Relevant Sample Data:
+
+
+INSERT INTO Mothers (ID, Name, Age, Location, HealthStatus)
+VALUES 
+(1, 'Alice', 28, 'Location A', 'Healthy'),
+(2, 'Maria', 34, 'Location B', 'At Risk'),
+(3, 'Jane', 22, 'Location A', 'Healthy');
+
+INSERT INTO HealthcareProviders (ID, Name, Location, ServicesOffered)
+VALUES 
+(1, 'Community Clinic', 'Location A', 'Maternity Care'),
+(2, 'City Hospital', 'Location B', 'Maternity Care, Pediatric Care');
+
+INSERT INTO HealthFacilities (ID, Name, Type, Location)
+VALUES 
+(1, 'Health Center A', 'Clinic', 'Location A'),
+(2, 'Health Center B', 'Hospital', 'Location B');
+
+INSERT INTO BirthRecords (ID, MotherID, HealthcareProviderID, DateOfBirth, Outcome)
+VALUES 
+(1, 1, 1, '2024-01-10', 'Live Birth'),
+(2, 2, 2, '2024-02-15', 'Stillbirth'),
+(3, 3, 1, '2024-03-01', 'Live Birth');
+
+
+SQL Programming
+Data Retrieval:
+
+Query: Retrieve all birth records with associated mother information.
+
+
+SELECT b.ID, m.Name AS MotherName, b.DateOfBirth, b.Outcome
+FROM BirthRecords b
+JOIN Mothers m ON b.MotherID = m.ID;
+Data Analysis:
+
+Query: Count live births versus stillbirths.
+
+
+SELECT Outcome, COUNT(*) AS Count
+FROM BirthRecords
+GROUP BY Outcome;
