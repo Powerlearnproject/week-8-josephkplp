@@ -1,0 +1,56 @@
+1. Import Data from SQL Database to Excel
+To import data from a SQL database into Excel:
+
+Open Excel.
+
+Go to the 'Data' tab on the ribbon.
+
+Click on Get Data > From Database > From SQL Server Database.
+
+If you are using a MySQL database, choose From Other Sources > From ODBC and configure the MySQL ODBC connection.
+Enter the SQL Server details (or MySQL connection) in the pop-up dialog box:
+
+Server name: Enter the name of your SQL server (e.g., localhost or db.server.com).
+Database name: Enter the name of the database that contains your data.
+Choose how you want to access the data:
+
+Write a SQL Query: Enter a custom SQL query to extract only the data you need.
+Select from a list: Browse tables or views and select the desired data for analysis.
+Once the data is loaded, it will appear in your Excel worksheet.
+
+2. Create a Pivot Table to Summarize Birth Outcomes
+Assuming your data has columns like Outcome, Birth Type, Date, etc., follow these steps to create a pivot table:
+
+Select your data range (or the table created after importing data).
+
+Go to the 'Insert' tab on the ribbon.
+
+Click on Pivot Table:
+
+In the dialog box, confirm the data range and choose where to place the pivot table (in a new worksheet or the current one).
+Set up your pivot table:
+
+Drag the Outcome field to the Rows area.
+Drag any identifier like Birth ID (or a countable field) to the Values area. Ensure that the value is set to Count to get the number of live births and stillbirths.
+Optionally, you can add Date to the Columns area if you want to break down the data by year or month.
+Your pivot table will now summarize the outcomes (e.g., live births vs. stillbirths).
+
+3. Create a Dashboard to Visualize Birth Outcomes
+To visualize the data using charts in Excel, follow these steps:
+
+Select the Pivot Table.
+
+Go to the 'Insert' tab and choose a chart type. Some useful charts for your scenario might include:
+
+Bar Chart or Column Chart to show the number of live births vs. stillbirths.
+Pie Chart to show the proportion of each outcome.
+Line Chart if you're looking at trends over time.
+Customize the chart:
+
+Click on the chart and use the Chart Tools options in the ribbon to customize the appearance.
+Add titles, labels, and legends to make the chart clear.
+Create the Dashboard:
+
+If you're using multiple charts, you can place them in one sheet to form a dashboard.
+Resize and position charts to fit neatly on the worksheet.
+You can also use slicers (in the PivotTable Analyze tab) to make your dashboard interactive. Slicers allow you to filter the data based on fields like Date or Location.
