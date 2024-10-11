@@ -1,0 +1,33 @@
+Sustainable Development Goal (SDG) Selection
+SDG 3: Good Health and Well-Being
+
+Problem Definition: High Rates of Maternal Mortality in Underserved Communities
+Background
+Maternal mortality refers to the death of a woman during pregnancy, childbirth, or within 42 days after the termination of pregnancy, due to complications related to the pregnancy or its management. Despite significant global progress in maternal health over the past two decades, maternal mortality remains a critical public health issue, particularly in low- and middle-income countries. According to the World Health Organization (WHO), approximately 810 women die every day from preventable causes related to pregnancy and childbirth.
+
+Specific Problem
+In underserved communities, particularly in rural and low-income urban areas, maternal mortality rates are significantly higher than the global average. This disparity can be attributed to several factors, including:
+
+Lack of Access to Quality Healthcare: Many women do not have access to trained healthcare professionals, facilities equipped to handle complications, or emergency services during childbirth.
+Socioeconomic Factors: Poverty, education, and social status can affect a woman's access to maternal health services, nutrition, and prenatal care.
+Cultural Barriers: In some communities, cultural norms and practices may discourage women from seeking medical help during pregnancy and childbirth.
+Inadequate Healthcare Infrastructure: Many health facilities in underserved areas lack the necessary resources, including trained staff and essential medical supplies.
+Significance of the Problem
+The high rates of maternal mortality not only affect individual families but also have broader implications for communities and nations. Addressing this issue is crucial for several reasons:
+
+Human Rights: Access to maternal healthcare is a fundamental human right. Every woman should have the right to safe pregnancy and childbirth.
+Economic Impact: Maternal deaths can have significant economic repercussions, including loss of productivity, increased healthcare costs, and reduced economic stability for families and communities.
+Intergenerational Effects: Maternal mortality has adverse effects on children, including increased risk of neonatal mortality, lower educational attainment, and poorer health outcomes.
+Global Health Goals: Achieving the targets set by SDG 3, particularly Target 3.1 (to reduce the global maternal mortality ratio to less than 70 per 100,000 live births), is essential for improving overall health and well-being.
+Proposed Data-Driven Solution
+To address the high rates of maternal mortality in underserved communities, a data-driven approach is essential. This involves:
+
+Data Collection: Gathering data on maternal health outcomes, healthcare access, and demographic factors.
+Database Development: Creating a relational database to store and analyze this data.
+Data Analysis: Utilizing SQL queries to identify trends, risk factors, and areas for improvement in maternal healthcare services.
+Excel Visualization: Analyzing and visualizing data in Excel to communicate insights and inform stakeholders about the state of maternal health in the targeted communities.
+By employing a data-driven solution, we aim to identify specific interventions that can improve maternal health outcomes and reduce mortality rates in these vulnerable populations.
+
+Conclusion
+High maternal mortality rates in underserved communities represent a pressing challenge that requires immediate attention. By leveraging data and technology, we can develop actionable insights that lead to improved healthcare services, increased awareness, and ultimately, better health outcomes for mothers and their children. Addressing this issue aligns with the broader goals of SDG 3 and contributes to the global movement towards equitable healthcare for all.
+
